@@ -1,0 +1,30 @@
+name: CI of the Project
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build NodeJS app
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout your repo
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      
+      # Step 2: Setup Node.js (default version = latest LTS if not specified)
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16   # add this line for consistency
+      
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+      
+      # Step 4: Run your app or tests
+      - name: Run tests
+        run: npm test
