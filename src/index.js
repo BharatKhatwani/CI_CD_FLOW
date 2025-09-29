@@ -9,10 +9,9 @@ app.get("/", (req, res) => {
 app.get("/product", (req, res) => {
   res.send("This is Product Page");
 })
-app.get("/products", (req, res) => {
-  res.send("This is Products Page");
+app.get("/order", (req, res) => {
+  res.send("This is Product Page");
 })
-
 
 
 app.listen(PORT, () => {
