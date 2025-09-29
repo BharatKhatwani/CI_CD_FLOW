@@ -9,6 +9,9 @@ app.get("/", (req, res) => {
 app.get("/product", (req, res) => {
   res.send("This is Product Page");
 })
+app.get("/products", (req, res) => {
+  res.send("This is Products Page");
+})
 
 
 
