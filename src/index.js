@@ -6,6 +6,9 @@ const PORT = 8080;
 app.get("/", (req, res) => {
   res.send("This is Home Page");
 })
+app.get("/product", (req, res) => {
+  res.send("This is Product Page");
+})
 
 
 
