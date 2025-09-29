@@ -13,6 +13,9 @@ app.get("/order", (req, res) => {
   res.send("This is Product Page");
 })
 
+app.get("/orders", (req, res) => {
+  res.send("This is Product Page");
+})
 
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`)
